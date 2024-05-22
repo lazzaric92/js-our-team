@@ -1,33 +1,38 @@
 const ourTeam = [
     {
-        name: 'Wayne Barnett',
-        'job-position': 'Founder & CEO',
-        image: 'wayne-barnett-founder-ceo.jpg'
+        Name: 'Wayne Barnett',
+        Position: 'Founder & CEO',
+        Photo: 'wayne-barnett-founder-ceo.jpg'
     },
     {
-        name: 'Angela Caroll',
-        'job-position': 'Chief Editor',
-        image: 'angela-caroll-chief-editor.jpg'
+        Name: 'Angela Caroll',
+        Position: 'Chief Editor',
+        Photo: 'angela-caroll-chief-editor.jpg'
     },
     {
-        name: 'Walter Gordon',
-        'job-position': 'Office Manager',
-        image: 'walter-gordon-office-manager.jpg'
+        Name: 'Walter Gordon',
+        Position: 'Office Manager',
+        Photo: 'walter-gordon-office-manager.jpg'
     },
     {
-        name: 'Angela Lopez',
-        'job-position': 'Social Media Manager',
-        image: 'angela-lopez-social-media-manager.jpg'
+        Name: 'Angela Lopez',
+        Position: 'Social Media Manager',
+        Photo: 'angela-lopez-social-media-manager.jpg'
     },
     {
-        name: 'Scott Estrada',
-        'job-position': 'Developer',
-        image: 'scott-estrada-developer.jpg'
+        Name: 'Scott Estrada',
+        Position: 'Developer',
+        Photo: 'scott-estrada-developer.jpg'
     },
     {
-        name: 'Barbara Ramos',
-        'job-position': 'Graphic Designer',
-        image: 'barbara-ramos-graphic-designer.jpg'
+        Name: 'Barbara Ramos',
+        Position: 'Graphic Designer',
+        Photo: 'barbara-ramos-graphic-designer.jpg'
     }
 ]
 
+for (let index = 0; index < ourTeam.length; index++){
+    for (let key in ourTeam[index]) {
+        console.log(key + ': ' + (ourTeam[index])[key]);
+    }
+}
