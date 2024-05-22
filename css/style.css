@@ -5,11 +5,12 @@
 }
 
 body {
-    font-family: Tahoma, sans-serif;
+    font-family: "Open Sans", sans-serif;
+    background-color: #f5f5f1;
 }
 
 .container {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -17,8 +18,21 @@ main {
     text-align: center;
 }
 
-main h1{
-    margin: 2rem 0;
+.container p:first-child{
+    margin: 2rem 0 0;
+    color: #3e3e3e;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.container p:nth-child(2) {
+    width: 55%;
+    margin: 1.5rem auto;
+    color: #8b8681;
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1.8rem;
 }
 
 #output {
@@ -28,14 +42,28 @@ main h1{
 }
 
 article {
-    border: 1px solid black;
-    width: calc(100% / 3 - 6px);
-    padding: 2rem 1rem;
-    margin-top: 1rem;
+    width: calc(100% / 3 - 30px);
+    margin: 1rem 0 2rem;
+    background-color: white;
+    color: #8b8681;
+}
+
+article img {
+    width: 100%;
 }
 
 .card-name {
     font-family: serif;
     font-size: 1.5rem;
     font-weight: bold;
+    margin-top: 1rem;
+    color: #6f6963;
+    font-family: "Vidaloka", serif;
+    font-weight: 400;
+}
+
+article div:last-child {
+    margin-bottom: 1.5rem;
+    margin-top: .3rem;
+    font-size: .8rem;
 }
