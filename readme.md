@@ -17,7 +17,7 @@ Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e 
 // creo un ciclo for per scorrere tutti gli elementi dell'array e all'interno un for...in per stampare le informazioni di ogni membro
 MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe
-// creo un ciclo for per scorrere tutti gli elementi dell'array e all'interno un for...in per appendere le informazioni di ogni membro a un p
+// creo un ciclo for per scorrere tutti gli elementi dell'array e all'interno un for...in per appendere le informazioni di ogni membro a un div
 BONUS 1:
 Trasformare la stringa foto in una immagine effettiva
 BONUS 2:

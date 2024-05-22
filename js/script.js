@@ -1,3 +1,5 @@
+const outputSectionEl = document.querySelector('#output');
+
 const ourTeam = [
     {
         Name: 'Wayne Barnett',
@@ -32,7 +34,14 @@ const ourTeam = [
 ]
 
 for (let index = 0; index < ourTeam.length; index++){
+    const articleEl = document.createElement('article');
     for (let key in ourTeam[index]) {
-        console.log(key + ': ' + (ourTeam[index])[key]);
+        const divEl = document.createElement('div');
+        divEl.append((ourTeam[index])[key]);
+        if(key == 'Name'){
+            divEl.classList.add('card-name');
+        }
+        articleEl.appendChild(divEl);
     }
+    outputSectionEl.appendChild(articleEl);
 }

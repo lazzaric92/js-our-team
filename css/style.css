@@ -3,3 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Tahoma, sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+main {
+    text-align: center;
+}
+
+main h1{
+    margin: 2rem 0;
+}
+
+#output {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+article {
+    border: 1px solid black;
+    width: calc(100% / 3 - 6px);
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+}
+
+.card-name {
+    font-family: serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
