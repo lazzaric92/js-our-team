@@ -2,52 +2,56 @@ const outputSectionEl = document.querySelector('#output');
 
 const ourTeam = [
     {
-        Photo: 'wayne-barnett-founder-ceo.jpg',
-        Name: 'Wayne Barnett',
-        Position: 'Founder & CEO'
+        image: 'wayne-barnett-founder-ceo.jpg',
+        name: 'Wayne Barnett',
+        position: 'Founder & CEO'
     },
     {
-        Photo: 'angela-caroll-chief-editor.jpg',
-        Name: 'Angela Caroll',
-        Position: 'Chief Editor'
+        image: 'angela-caroll-chief-editor.jpg',
+        name: 'Angela Caroll',
+        position: 'Chief Editor'
     },
     {
-        Photo: 'walter-gordon-office-manager.jpg',
-        Name: 'Walter Gordon',
-        Position: 'Office Manager'
+        image: 'walter-gordon-office-manager.jpg',
+        name: 'Walter Gordon',
+        position: 'Office Manager'
     },
     {
-        Photo: 'angela-lopez-social-media-manager.jpg',
-        Name: 'Angela Lopez',
-        Position: 'Social Media Manager'
+        image: 'angela-lopez-social-media-manager.jpg',
+        name: 'Angela Lopez',
+        position: 'Social Media Manager'
     },
     {
-        Photo: 'scott-estrada-developer.jpg',
-        Name: 'Scott Estrada',
-        Position: 'Developer'
+        image: 'scott-estrada-developer.jpg',
+        name: 'Scott Estrada',
+        position: 'Developer'
     },
     {
-        Photo: 'barbara-ramos-graphic-designer.jpg',
-        Name: 'Barbara Ramos',
-        Position: 'Graphic Designer'
+        image: 'barbara-ramos-graphic-designer.jpg',
+        name: 'Barbara Ramos',
+        position: 'Graphic Designer'
     }
 ]
 
 for (let index = 0; index < ourTeam.length; index++){
+    const member = ourTeam[index];
+    console.log(member.name, member.position, member.image);
     const articleEl = document.createElement('article');
-    for (let key in ourTeam[index]) {
+    for (let key in member) {
         const divEl = document.createElement('div');
-        if(key == 'Photo'){
+        const pEl = document.createElement('p');
+        if(key == 'image'){
             const imgEl = document.createElement('img');
-            imgEl.setAttribute('src', 'img/' + ((ourTeam[index])[key]));
-            imgEl.setAttribute('alt', 'img/' + ((ourTeam[index])['Name'] + ' photo'));
+            imgEl.setAttribute('src', 'img/' + (member[key]));
+            imgEl.setAttribute('alt', 'img/' + member.name + ' photo');
             divEl.appendChild(imgEl);
         } else {
-            divEl.append((ourTeam[index])[key]);
+            pEl.append(member[key]);
+            divEl.appendChild(pEl);
         }
 
-        if(key == 'Name'){
-            divEl.classList.add('card-name');
+        if(key == 'name'){
+            pEl.classList.add('card-name');
         }
         articleEl.appendChild(divEl);
     }

@@ -18,7 +18,7 @@ main {
     text-align: center;
 }
 
-.container p:first-child{
+.title{
     margin: 2rem 0 0;
     color: #3e3e3e;
     text-transform: uppercase;
@@ -26,7 +26,7 @@ main {
     font-weight: 600;
 }
 
-.container p:nth-child(2) {
+.container > p:nth-child(2) {
     width: 55%;
     margin: 1.5rem auto;
     color: #8b8681;
@@ -62,7 +62,7 @@ article img {
     font-weight: 400;
 }
 
-article div:last-child {
+article div:last-child p {
     margin-bottom: 1.5rem;
     margin-top: .3rem;
     font-size: .8rem;
